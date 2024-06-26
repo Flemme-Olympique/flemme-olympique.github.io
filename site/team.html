@@ -2,34 +2,56 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="thumbnail" content="rss.jpg" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="main.css" />
     <link rel="shortcut icon" type="image/png" href="shortcut.png" />
-    <title>FFF &mdash; Équipe</title>
+    <title>FFF &mdash; Home</title>
   </head>
 
   <body>
-    <header>
-      <a href="index.html"><img src="snooze.svg" alt="100R" height="50" /></a>
-    </header>
-    <nav>
-      <details open>
-        <summary>Menu</summary>
-        <section class="site-nav">
-          <section>
-            <ul class="nobull capital">
+    <div class="header">
+      <header>
+        <a href="index.html"><img src="snooze.svg" alt="Flemme Olympique" height="50" /></a>
+      </header>
+
+      <nav>
+        <details class="nav_menu">
+          <summary>Menu</summary>
+          <section class="site-nav">
+            <ul class="nobull">
               <li><a href="philosophy.html">Philosophie</a></li>
               <li><a href="team.html">Équipe</a></li>
             </ul>
           </section>
-      </details>
-    </nav>
+        </details>
+        <section>
+          <p><a href="mailto:flemme-olympique@shdw.xyz">Rejoignez-nous</a></p>
+        </section>
+      </nav>
+
+      <script>
+        if (!window.matchMedia("(max-width: 1100px)").matches) {
+          document.body.querySelector(".nav_menu").setAttribute("open", "");
+        }
+
+        window.matchMedia("(max-width: 1100px)").addEventListener("change", (evt) => {
+          !evt.matches
+            ? document.body.querySelector(".nav_menu").setAttribute("open", "")
+            : document.body.querySelector(".nav_menu").removeAttribute("open");
+        });
+      </script>
+    </div>
+
     <main>
       <h1>Présentation de l'Équipe de la Flemme Olympique</h1>
+      <a href="team.html">
+        <img src="banner.svg" style="filter: invert(1)" alt="La Flemme Olympique." loading="lazy" />
+      </a>
+
+      <h2>Notre Équipe</h2>
 
       <p>
-        Dans l'univers de la <b>Flemme Olympique</b>, où l'effort est un concept étranger et la détente une discipline à
+        Dans l'univers <b>La Flemme Olympique</b>, où l'effort est un concept étranger et la détente une discipline à
         part entière, nous avons l'honneur de vous présenter notre équipe exceptionnelle de neuf champions de la
         paresse, prêts à défendre les couleurs de nos services dans des épreuves où l'immobilité et la relaxation sont
         primordiales.
@@ -98,7 +120,7 @@
           </ul>
         </li>
         <li>
-          <b>Aurelie "La Couch Potato" Lhommeau</b>
+          <b>Aurelie "La Couch Potato" Lecourt</b>
           <ul>
             <li><b>Spécialité :</b> Immersion canapé</li>
             <li>
@@ -129,27 +151,31 @@
         </li>
       </ol>
 
+      <h2>Notre Président</h2>
+      <img src="president.svg" style="filter: invert(1); max-height: 150px" alt="Notre president." loading="lazy" />
+
       <h2>Notre Mission</h2>
       <p>
-        L'<b>Équipe de la Flemme Olympique</b> est prête à montrer au monde que la paresse est une discipline sérieuse
-        qui nécessite une préparation rigoureuse et une dévotion totale. Nos athlètes sont déterminés à décrocher l'or
-        dans leurs catégories respectives, prouvant ainsi que le repos et la détente ont leur place sur la scène
-        olympique.
+        L'équipe <b>La Flemme Olympique</b> est prête à montrer au monde que la paresse est une discipline sérieuse qui
+        nécessite une préparation rigoureuse et une dévotion totale. Nos athlètes sont déterminés à décrocher l'or dans
+        leurs catégories respectives, prouvant ainsi que le repos et la détente ont leur place en haut de la scène.
       </p>
 
       <h2>Soutenez-nous !</h2>
       <p>
-        Rejoignez-nous dans cette aventure unique et suivez nos exploits aux Jeux Olympiques. Ensemble, faisons honneur
-        à la paresse et montrons que l'art de ne rien faire peut aussi être une source de fierté nationale.
+        Rejoignez-nous dans cette aventure unique et suivez nos exploits. Ensemble, faisons honneur à la paresse et
+        montrons que l'art de ne rien faire peut aussi être une source de fierté nationale.
       </p>
       <p><b>Allez l'Équipe de la Flemme Olympique !</b></p>
     </main>
+
     <footer>
       <hr />
       <span style="float: right"
-        ><a href="https://github.com/Flemme-Olympique/flemme-olympique.github.io/blob/main/site/team.html">[edit]</a><br
+        ><a href="https://github.com/Flemme-Olympique/flemme-olympique.github.io/blob/main/site/index.html">[edit]</a
+        ><br
       /></span>
-      <b>Fédération française des Flémmards.</b> © 2024
+      <b>Fédération française des Flémmards - La Flemme Olympique</b> © 2024
     </footer>
   </body>
 </html>
