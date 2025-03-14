@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="shortcut icon" type="image/png" href="shortcut.png" />
+    <title>FFF &mdash; Home</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <header>
+        <a href="index.html"><img src="snooze.svg" alt="Flemme Olympique" height="50" /></a>
+      </header>
+
+      <nav>
+        <details class="nav_menu">
+          <summary>Menu</summary>
+          <section class="site-nav">
+            <ul class="nobull">
+              <li><a href="philosophy.html">Philosophie</a></li>
+              <li><a href="team.html">Équipe</a></li>
+            </ul>
+          </section>
+        </details>
+        <section>
+          <p><a href="mailto:flemme-olympique@shdw.xyz">Rejoignez-nous</a></p>
+        </section>
+      </nav>
+
+      <script>
+        if (!window.matchMedia("(max-width: 1100px)").matches) {
+          document.body.querySelector(".nav_menu").setAttribute("open", "");
+        }
+
+        window.matchMedia("(max-width: 1100px)").addEventListener("change", (evt) => {
+          !evt.matches
+            ? document.body.querySelector(".nav_menu").setAttribute("open", "")
+            : document.body.querySelector(".nav_menu").removeAttribute("open");
+        });
+      </script>
+    </div>
+
+    <main>
+      <h1>À Propos de la Fédération Française des Flemmards</h1>
+      <a href="team.html">
+        <img src="banner.svg" alt="La Flemme Olympique." loading="lazy" />
+      </a>
+
+      <h2>Notre Mission</h2>
+      <p>
+        La mission de la <b>Fédération Française des Flemmards</b> est de valoriser le temps libre et de prôner une
+        approche de la vie axée sur la détente et le repos. Nous encourageons chacun à adopter une philosophie de vie où
+        la relaxation n'est pas seulement acceptée, mais célébrée. En tant que pionniers de la paresse constructive,
+        nous travaillons à changer les perceptions négatives associées à la paresse et à montrer qu'elle peut être
+        bénéfique pour le bien-être mental et physique.
+      </p>
+
+      <h2><a href="philosophy.html">Nos Valeurs</a></h2>
+      <ul>
+        <li>
+          <b>Sérénité :</b> Nous croyons que la tranquillité d'esprit est essentielle pour une vie heureuse et
+          épanouie. Nos activités et nos ressources sont conçues pour aider chacun à atteindre un état de calme et de
+          sérénité.
+        </li>
+        <li>
+          <b>Équilibre :</b> Trouver un équilibre entre activité et repos est crucial. Nous prônons une approche
+          équilibrée de la vie où les moments de paresse sont aussi valorisés que les moments d'activité.
+        </li>
+        <li>
+          <b>Communauté :</b> Nous favorisons un esprit de camaraderie et de soutien au sein de notre communauté.
+          Partager nos expériences et nos astuces de flemmards nous rend plus forts ensemble.
+        </li>
+      </ul>
+
+      <h2>Nos Activités et Ressources</h2>
+      <p>
+        La <b>Fédération Française des Flemmards</b> propose une variété d'activités et de ressources pour aider nos
+        membres à embrasser pleinement leur nature de flemmard :
+      </p>
+
+      <ul>
+        <li><b>Concours de sieste :</b> Mesurez vos talents de dormeur face aux meilleurs.</li>
+        <li>
+          <b>Marathons de séries :</b> Profitez de nos recommandations et rejoignez nos sessions de visionnage
+          collectif.
+        </li>
+        <li>
+          <b>Ateliers de méditation paresseuse : </b>Apprenez à atteindre une relaxation profonde avec le minimum
+          d'effort.
+        </li>
+        <li>
+          <b>Guides de survie pour flemmards : </b>Découvrez nos conseils pour maximiser votre temps de repos et
+          minimiser le stress.
+        </li>
+      </ul>
+
+      <h2><a href="team.html">L'Équipe de La Flemme Olympique</a></h2>
+      <p>
+        Nous sommes fiers de présenter notre équipe <b><a href="team.html">La Flemme Olympique</a></b
+        >, composée de neuf athlètes exceptionnels qui excellent dans des disciplines où l'art de la paresse est à
+        l'honneur. Ces champions de la détente et de la relaxation représentent l'essence de notre mission et démontrent
+        que la paresse peut aussi être une source de fierté et de réussite.
+      </p>
+
+      <h2>Rejoignez la Fédération Française des Flemmards</h2>
+      <p>
+        Devenir membre de la <b>Fédération Française des Flemmards</b>, c'est rejoindre une communauté de personnes qui
+        valorisent le repos et la détente. En tant que membre, vous bénéficierez d'un accès exclusif à nos événements, à
+        notre forum de discussion et à nos newsletters remplies de conseils pour une vie sans stress.
+      </p>
+      <p>
+        Pour toute question ou demande d'information, n'hésitez pas à nous contacter. Nous serons ravis de vous
+        accueillir dans notre communauté de flemmards, où le repos est roi et la détente une priorité absolue.
+      </p>
+      <p><b>Bienvenue chez les flemmards, où la vie est plus douce et plus tranquille !</b></p>
+    </main>
+
+    <footer>
+      <hr />
+      <span style="float: right"
+        ><a href="https://github.com/Flemme-Olympique/flemme-olympique.github.io/blob/main/site/index.html">[edit]</a
+        ><br
+      /></span>
+      <b>Fédération française des Flémmards - La Flemme Olympique</b> © 2024
+    </footer>
+  </body>
+</html>

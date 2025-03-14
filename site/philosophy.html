@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="shortcut icon" type="image/png" href="shortcut.png" />
+    <title>FFF &mdash; Home</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <header>
+        <a href="index.html"><img src="snooze.svg" alt="Flemme Olympique" height="50" /></a>
+      </header>
+
+      <nav>
+        <details class="nav_menu">
+          <summary>Menu</summary>
+          <section class="site-nav">
+            <ul class="nobull">
+              <li><a href="philosophy.html">Philosophie</a></li>
+              <li><a href="team.html">Équipe</a></li>
+            </ul>
+          </section>
+        </details>
+        <section>
+          <p><a href="mailto:flemme-olympique@shdw.xyz">Rejoignez-nous</a></p>
+        </section>
+      </nav>
+
+      <script>
+        if (!window.matchMedia("(max-width: 1100px)").matches) {
+          document.body.querySelector(".nav_menu").setAttribute("open", "");
+        }
+
+        window.matchMedia("(max-width: 1100px)").addEventListener("change", (evt) => {
+          !evt.matches
+            ? document.body.querySelector(".nav_menu").setAttribute("open", "")
+            : document.body.querySelector(".nav_menu").removeAttribute("open");
+        });
+      </script>
+    </div>
+
+    <main>
+      <h1>La Philosophie du Mouvement des Flemmards.</h1>
+      <a href="team.html">
+        <img src="sleeping.svg" alt="Un garçon dormant au pied d'un arbre." loading="lazy" />
+      </a>
+
+      <!-- <p>
+        La <b>Fédération Française des Flemmards (FFF)</b> est bien plus qu'une simple organisation : c'est un mode de
+        vie, une manière de voir le monde sous un angle nouveau, plus serein et plus équilibré. Notre philosophie repose
+        sur l'idée que la paresse, loin d'être un défaut, peut être une force positive lorsqu'elle est pratiquée de
+        manière consciente et délibérée.
+      </p> -->
+
+      <h2>L'Art de la Paresse Consciente</h2>
+      <p>
+        La paresse consciente est le principe fondateur de notre mouvement. Il ne s'agit pas de simplement ne rien
+        faire, mais de choisir délibérément de ralentir et de prendre du temps pour soi. En pratiquant la paresse
+        consciente, nous apprenons à écouter notre corps et notre esprit, à reconnaître nos besoins de repos et à y
+        répondre sans culpabilité. Cette approche nous permet de retrouver notre énergie, de réduire le stress et
+        d'améliorer notre bien-être général.
+      </p>
+
+      <h2>Les Bienfaits de la Paresse</h2>
+      <ul>
+        <li>
+          <b>Réduction du stress :</b> Prendre le temps de se détendre permet de diminuer les niveaux de stress et
+          d'anxiété, contribuant ainsi à une meilleure santé mentale.
+        </li>
+        <li>
+          <b>Créativité accrue :</b> Le repos et la relaxation favorisent l'émergence de nouvelles idées et stimulent la
+          créativité.
+        </li>
+        <li>
+          <b>Amélioration de la concentration :</b> Les pauses régulières permettent de recharger nos batteries
+          mentales, améliorant ainsi notre capacité à nous concentrer et à être plus productifs lorsque nous
+          travaillons.
+        </li>
+        <li>
+          <b>Santé physique :</b> Le repos adéquat est essentiel pour le bon fonctionnement de notre corps, réduisant
+          les risques de maladies liées au stress et à la fatigue.
+        </li>
+      </ul>
+
+      <h2>La Lenteur comme Mode de Vie</h2>
+      <p>
+        Contrairement à la croyance populaire, la paresse consciente n'est pas l'ennemie de la productivité. En fait,
+        elle peut être son alliée la plus précieuse. En prenant des pauses régulières et en accordant de l'importance au
+        repos, nous augmentons notre capacité à être productifs de manière plus efficace et plus durable. La clé réside
+        dans l'équilibre entre travail et repos, où chaque période de repos permet de revenir aux tâches avec plus de
+        vigueur et de clarté d'esprit.
+      </p>
+
+      <h2>Une Communauté de Paresseux Éclairés</h2>
+      <p>
+        La <b>Fédération Française des Flemmards</b> n'est pas seulement un refuge pour les adeptes du repos, mais aussi
+        une communauté de personnes partageant les mêmes valeurs et la même vision de la vie. Ensemble, nous promouvons
+        un mode de vie où la détente et le bien-être sont prioritaires. Nous échangeons des astuces, organisons des
+        événements et soutenons chacun dans la quête d'un équilibre harmonieux entre activité et repos.
+      </p>
+
+      <h2>Rejoignez le Mouvement</h2>
+      <p>
+        Nous invitons chacun à embrasser cette philosophie et à découvrir les bienfaits d'une vie moins stressante et
+        plus équilibrée. Que vous soyez un flemmard de longue date ou que vous cherchiez à intégrer plus de repos dans
+        votre quotidien, la <b>Fédération Française des Flemmards</b> est là pour vous guider et vous soutenir.
+      </p>
+      <p>
+        <b
+          >Ensemble, célébrons l'art de la paresse et montrons que prendre soin de soi est la clé d'une vie heureuse et
+          épanouie.</b
+        >
+      </p>
+    </main>
+
+    <footer>
+      <hr />
+      <span style="float: right"
+        ><a href="https://github.com/Flemme-Olympique/flemme-olympique.github.io/blob/main/site/index.html">[edit]</a
+        ><br
+      /></span>
+      <b>Fédération française des Flémmards - La Flemme Olympique</b> © 2024
+    </footer>
+  </body>
+</html>

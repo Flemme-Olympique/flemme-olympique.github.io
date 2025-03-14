@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="shortcut icon" type="image/png" href="shortcut.png" />
+    <title>FFF &mdash; Home</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <header>
+        <a href="index.html"><img src="snooze.svg" alt="Flemme Olympique" height="50" /></a>
+      </header>
+
+      <nav>
+        <details class="nav_menu">
+          <summary>Menu</summary>
+          <section class="site-nav">
+            <ul class="nobull">
+              <li><a href="philosophy.html">Philosophie</a></li>
+              <li><a href="team.html">Équipe</a></li>
+            </ul>
+          </section>
+        </details>
+        <section>
+          <p><a href="mailto:flemme-olympique@shdw.xyz">Rejoignez-nous</a></p>
+        </section>
+      </nav>
+
+      <script>
+        if (!window.matchMedia("(max-width: 1100px)").matches) {
+          document.body.querySelector(".nav_menu").setAttribute("open", "");
+        }
+
+        window.matchMedia("(max-width: 1100px)").addEventListener("change", (evt) => {
+          !evt.matches
+            ? document.body.querySelector(".nav_menu").setAttribute("open", "")
+            : document.body.querySelector(".nav_menu").removeAttribute("open");
+        });
+      </script>
+    </div>
+
+    <main>
+      <h1>Présentation de l'Équipe de la Flemme Olympique</h1>
+      <a href="team.html">
+        <img src="banner.svg" alt="La Flemme Olympique." loading="lazy" />
+      </a>
+
+      <h2>Notre Équipe</h2>
+
+      <p>
+        Dans l'univers <b>La Flemme Olympique</b>, où l'effort est un concept étranger et la détente une discipline à
+        part entière, nous avons l'honneur de vous présenter notre équipe exceptionnelle de neuf champions de la
+        paresse, prêts à défendre les couleurs de nos services dans des épreuves où l'immobilité et la relaxation sont
+        primordiales.
+      </p>
+
+      <ol>
+        <li>
+          <b>Marie "La Dormeuse" Nantes</b>
+          <ul>
+            <li><b>Spécialité :</b> Sieste de compétition</li>
+            <li>
+              <b>Description :</b> Championne incontestée de la sieste prolongée, Marie peut dormir n'importe où et
+              n'importe quand. Son record de 18 heures sans interruption fait d'elle un atout majeur pour l'équipe.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <b>Jessica "La Zen" Guillet</b>
+          <ul>
+            <li><b>Spécialité :</b> Méditation passive</li>
+            <li>
+              <b>Description :</b> Experte en relaxation profonde, Jessica excelle dans l'art de rester immobile tout en
+              gardant un état de relaxation totale. Sa capacité à méditer sans bouger pendant des heures est
+              impressionnante.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <b>Gael "Le Statique" Kervinio</b>
+          <ul>
+            <li><b>Spécialité :</b> Immobilité extrême</li>
+            <li>
+              <b>Description :</b> Avec une endurance à toute épreuve, Gael peut rester immobile pendant des périodes
+              prolongées. Son calme et sa sérénité sont des atouts indispensables pour l'équipe.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <b>Audrey "La Sériphile" Chancel</b>
+          <ul>
+            <li><b>Spécialité :</b> Marathon de séries</li>
+            <li>
+              <b>Description :</b> Audrey peut enchaîner les épisodes de séries télévisées sans interruption, avec une
+              concentration inégalée. Sa passion pour le binge-watching est légendaire.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <b>Karine "La Lectrice" Beaubeau</b>
+          <ul>
+            <li><b>Spécialité :</b> Lecture nonchalante</li>
+            <li>
+              <b>Description :</b> Karine possède une capacité unique à lire des livres pendant des heures sans bouger.
+              Son endurance mentale et physique en fait un pilier de l'équipe.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <b>Lise "La Flâneuse" Mouchel</b>
+          <ul>
+            <li><b>Spécialité :</b> Balades lentes</li>
+            <li>
+              <b>Description :</b> Maîtresse de la promenade au ralenti, Lise incarne l'art de la flânerie. Elle peut se
+              promener sans but pendant des heures, appréciant chaque instant de lenteur.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <b>Aurelie "La Couch Potato" Lecourt</b>
+          <ul>
+            <li><b>Spécialité :</b> Immersion canapé</li>
+            <li>
+              <b>Description :</b> Aurelie excelle dans l'art de rester affalée sur un canapé, entourée de coussins. Sa
+              capacité à trouver la position parfaite pour le maximum de confort est inégalée.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <b>Anne "La Procrastinatrice" Audru</b>
+          <ul>
+            <li><b>Spécialité :</b> Procrastination stratégique</li>
+            <li>
+              <b>Description :</b> Anne est une virtuose de la procrastination. Elle sait comment retarder l'inévitable
+              avec une maîtrise remarquable, transformant la procrastination en un art de vivre.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <b>Pierre "Le Gamer" Bessaguet</b>
+          <ul>
+            <li><b>Spécialité :</b> Marathon de Jeux vidéo</li>
+            <li>
+              <b>Description :</b> Pierre peut jouer à des jeux vidéo pendant des heures sans se fatiguer. Sa
+              concentration et son endurance numérique sont des atouts essentiels pour l'équipe.
+            </li>
+          </ul>
+        </li>
+      </ol>
+
+      <h2>Notre Mission</h2>
+      <p>
+        L'équipe <b>La Flemme Olympique</b> est prête à montrer au monde que la paresse est une discipline sérieuse qui
+        nécessite une préparation rigoureuse et une dévotion totale. Nos athlètes sont déterminés à décrocher l'or dans
+        leurs catégories respectives, prouvant ainsi que le repos et la détente ont leur place en haut de la scène.
+      </p>
+
+      <h2>Soutenez-nous !</h2>
+      <p>
+        Rejoignez-nous dans cette aventure unique et suivez nos exploits. Ensemble, faisons honneur à la paresse et
+        montrons que l'art de ne rien faire peut aussi être une source de fierté nationale.
+      </p>
+      <p><b>Allez l'Équipe de la Flemme Olympique !</b></p>
+    </main>
+
+    <footer>
+      <hr />
+      <span style="float: right"
+        ><a href="https://github.com/Flemme-Olympique/flemme-olympique.github.io/blob/main/site/index.html">[edit]</a
+        ><br
+      /></span>
+      <b>Fédération française des Flémmards - La Flemme Olympique</b> © 2024
+    </footer>
+  </body>
+</html>
